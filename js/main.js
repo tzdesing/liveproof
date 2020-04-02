@@ -27,7 +27,8 @@
       if(str_counter_1>99999){
         str_counter_2++;
       }
-      display_str = str_counter_2.toString() + str_counter_1.toString() + str_counter_0.toString();
+      //display_str = str_counter_2.toString() + str_counter_1.toString() + str_counter_0.toString();
+      display_str = Math.floor(Date.now()/1000).toString(16) ;
       for (var i = 0; i < display_str.length; i++) {
         var new_span = document.createElement('span');
         new_span.className = 'num_tiles';
